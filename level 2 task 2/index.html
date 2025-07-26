@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 2 - Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="form-container">
+    <h2>📝 Registration Form</h2>
+
+    <form id="registerForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Enter your name" />
+      <input type="email" id="email" placeholder="Enter your email" />
+      <input type="password" id="password" placeholder="Enter password" />
+      <input type="password" id="confirmPassword" placeholder="Confirm password" />
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
