@@ -1,0 +1,120 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#display, #display-analog {
+  font-size: 3em;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+  transition: background 0.3s;
+}
+
+#mark {
+  background-color: #4caf50;
+  color: white;
+}
+
+#mark:hover {
+  background-color: #45a049;
+}
+
+#toggle {
+  background-color: #2196f3;
+  color: white;
+}
+
+#toggle:hover {
+  background-color: #1e88e5;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#marks-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#marks-list li {
+  background: rgba(255,255,255,0.1);
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  color: #fff;
+  font-family: monospace;
+}
+
+
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-color: #333;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  background: white;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.hour {
+  height: 70px;
+  width: 6px;
+}
+
+.minute {
+  height: 100px;
+  width: 4px;
+}
+
+.second {
+  height: 120px;
+  width: 2px;
+  background: red;
+}
+
+.center-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

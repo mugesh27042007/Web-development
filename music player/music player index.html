@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Macha Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <header class="topbar">
+    <a onclick="showView('home')">Home</a>
+    <a onclick="showView('playlist')">Playlists</a>
+    <a onclick="toggleTheme()">🌓 Theme</a>
+  </header>
+
+  <main>
+    <section id="view-home" class="view active">
+      <div class="player">
+        <div class="details">
+          <div class="now-playing"></div>
+          <div class="track-art"></div>
+          <div class="track-name"></div>
+          <div class="track-artist"></div>
+        </div>
+        <div class="slider">
+          <span class="current-time">00:00</span>
+          <input type="range" class="seek_slider" min="0" max="100" value="0">
+          <span class="total-duration">00:00</span>
+        </div>
+        <div class="volume">
+          🔊 <input type="range" class="volume_slider" min="0" max="100" value="90">
+        </div>
+        <div class="controls">
+          <button onclick="randomTrack()"><i class="fa fa-random"></i></button>
+          <button onclick="prevTrack()"><i class="fa fa-step-backward"></i></button>
+          <button class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-2x"></i></button>
+          <button onclick="nextTrack()"><i class="fa fa-step-forward"></i></button>
+          <button onclick="repeatTrack()"><i class="fa fa-repeat"></i></button>
+        </div>
+        <div id="wave" class="wave">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-playlist" class="view">
+      <div class="playlist">
+        <ul id="playlist"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

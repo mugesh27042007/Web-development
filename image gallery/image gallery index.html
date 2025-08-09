@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Gallery</h1>
+      <ul class="nav-links">
+        <li><button class="nav-btn" id="homeBtn">Home</button></li>
+        <li><button class="nav-btn" id="categoryBtn">Categories</button></li>
+        <li><button class="nav-btn" id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="filters" id="filtersSection">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+    <button class="filter-btn" data-category="architecture">Architecture</button>
+  </section>
+
+  
+  <main>
+    <section class="gallery" id="gallerySection">
+      
+      <div class="image-card" data-category="nature">
+        <img src="c:\Users\Mugesh2704\OneDrive\DCIM\Camera\IMG20240921074604.jpg" alt="Nature" />
+      </div>
+      <div class="image-card" data-category="nature">
+        <img src="c:\Users\Mugesh2704\OneDrive\DCIM\Camera\IMG20241209173042.jpg" alt="Nature" />
+      </div>
+      
+      <div class="image-card" data-category="nature">
+        <img src="d:\PHOTOS\Pictures\.thumbnails\1000003114.jpg" alt="Nature" />
+      </div>
+      <div class="image-card" data-category="nature">
+        <img src="d:\PHOTOS\Pictures\IMG20241114121112.jpg" alt="Nature" />
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="d:\PHOTOS\2025-01-19\1000002840.jpg" alt="People" />
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="d:\PHOTOS\2025-01-19\1000002992.jpg" alt="People" />
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="d:\PHOTOS\2025-01-19\1000003007.jpg" alt="People" />
+      </div>
+      <div class="image-card" data-category="people">
+        <img src="d:\PHOTOS\2025-01-19\1000003019.jpg" alt="People" />
+      </div>
+      <div class="image-card" data-category="animals">
+        <img src="d:\PHOTOS\2025-01-19\1000003059.jpg" alt="Animals" />
+      </div>
+      <div class="image-card" data-category="animals">
+        <img src="d:\PHOTOS\2025-01-19\1000002935.jpg" alt="Animals" />
+      </div>
+      <div class="image-card" data-category="animals">
+        <img src="d:\PHOTOS\2025-01-19\1000003113.jpg" alt="Animals" />
+      </div>
+      
+      <div class="image-card" data-category="architecture">
+        <img src="d:\PHOTOS\2025-01-19\1000009044.jpg" alt="Architecture" />
+      </div>
+      <div class="image-card" data-category="architecture">
+        <img src="d:\PHOTOS\Pictures\Camera imports\R .jpg" alt="Architecture" />
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

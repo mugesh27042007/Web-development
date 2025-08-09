@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+#loader {
+  position: fixed; inset: 0;
+  background: black; color: white;
+  display: flex; justify-content: center; align-items: center;
+  font-size: 2rem; z-index: 9999;
+  animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d47a1;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-track {
+  background-color: orange;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+
+.hero {
+  padding: 100px 20px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLzzgGa4Rd-ygloiFy50nXiysZfHsGA-21w&s') no-repeat center center/cover;
+  text-align: center;
+  color: black;
+  background: #dbeffe;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.location{
+  background-color: #0d47a1;
+  color: white;
+}
+.call mechanic {
+  background-color: orange;
+  color: black;
+}
+
+
+#Service {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.service div {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+
+#How {
+  padding: 40px 20px;
+  background: #bbdefb;
+}
+#How h2{
+  justify-content: center;
+  text-align: center;
+}
+#How  ol {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 2;
+}
+
+
+#About {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+
+
+#Contact {
+  padding: 50px 20px;
+  background: #bbdefb;
+  text-align: center;
+}
+#Shop-location {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+} 

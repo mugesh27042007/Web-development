@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stopwatch</h1>
+
+   
+    <div id="digital-container">
+      <div id="display">00:00:00:000</div>
+    </div>
+
+    
+    <div id="analog-container" style="display:none;">
+      <div id="display-analog">00:00:00:000</div>
+      <div class="clock">
+        <div class="hand hour" id="hour-hand"></div>
+        <div class="hand minute" id="minute-hand"></div>
+        <div class="hand second" id="second-hand"></div>
+        <div class="center-dot"></div>
+      </div>
+    </div>
+
+    
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+      <button id="mark">Mark</button>
+      <button id="toggle">Switch to Analog</button>
+    </div>
+
+    
+    <ul id="marks-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
